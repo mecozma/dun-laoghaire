@@ -14,9 +14,31 @@ html {
 /* My style */
 body {
   line-height: 1.4;
+  font-family: 'Roboto Mono', monospace;
 }
 
+header {
+  height: 60vh;
+  background-image: url('../images/illustrated-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+div.mobile-menu {
+  position: relative;
+  border: 1px solid red;
+  height: 100%;
+}
+
+div.logo p {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* Menu styling starts here */
 
