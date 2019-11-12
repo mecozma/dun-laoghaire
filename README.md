@@ -12,6 +12,7 @@ Questions addressed to the client:
   https://brayairdisplay.com/tourism-campaign-2018/
  4. What is the message your website should sent to your users?
  5. Who are your clients?
+  - tourists, people who want to rent or buy a house/apartment.
  6. What is your company's :  --colors,
                               --slogan,
                               --logo,
@@ -25,6 +26,10 @@ Questions addressed to the client:
                 -- https://www.dunlaoghairetown.ie/
                 -- https://www.facebook.com/pg/DunLaoghaireTown/photos/?tab=album&album_id=762229303824595&ref=page_internal
                 -- http://coderdojodl.com/
+                -- https://theculturetrip.com/europe/ireland/articles/the-top-10-things-to-do-in-dun-laoghaire-dublin/
+                -- https://www.tripadvisor.co.uk/Attractions-g186606-Activities-Dun_Laoghaire_County_Dublin.html
+                -- https://dlrcoco.ie/
+                https://www.gotobermuda.com/
 
 
 
