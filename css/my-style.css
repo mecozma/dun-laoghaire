@@ -1,13 +1,14 @@
 /* Css variables */
 :root {
-  --primary-color: rgba(13, 110, 139, 0.75);
-  --overlay-color: rgba(24, 39, 51, 0.85);
+  --primary-color: rgb(45, 171, 202);
+  --overlay-color: rgb(7, 43, 54);
   --message-color: rgb(255, 255, 255);
   --menu-speed: 0.75s;
   --activities-background: #4a90e2;
   --facebook-color: #3b5998;
   --instagram-color: #e4405f;
   --reddit-color: #ff4301;
+  --footer-color: rgb(2, 23, 29);
 }
 /* Box sizing */
 html {
@@ -21,12 +22,19 @@ html {
 /* My style */
 body {
   line-height: 1.4;
-  font-family: "Roboto Mono", monospace;
+  font-family: Lato, monospace;
   position: relative;
+  background-color: var(--overlay-color);
 }
 
 header {
   height: 12vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
 }
 
 div.mobile-menu {
@@ -69,7 +77,7 @@ div.logo img {
   width: 60px;
   height: 60px;
   padding: 1rem;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +87,8 @@ div.logo img {
   position: relative;
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color:var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,6 +191,11 @@ div.logo img {
   transition: color 0.4s ease;
 }
 
+.menu-wrap .menu > div > div > ul > li:last-child > a {
+  background-color: var(--primary-color);
+  font-size: 16px;
+}
+
 .menu-wrap .menu > div > div > ul > li:last-child > a i.fa-cloud-download-alt {
   padding-right: 5px;
 }
@@ -189,12 +203,14 @@ div.logo img {
 /* Landing section styling */
 
 div.landing {
-  height: 70vh;
-  background-image: url("../assets/images/illustrated-bg.jpg");
+  /* height: 70vh; */
+  /* background-image: url("../assets/images/illustrated-bg.jpg"); */
+  margin-top: 60px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -205,38 +221,86 @@ div.landing div.section > div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
+  
 }
 
 div.message h1 {
-  font-size: 24px;
+  /* font-weight: 700; */
+  font-size: 30px;
   text-align: center;
-  margin-bottom: 20px;
-  border-bottom: 2px solid var(--message-color);
+  margin: 30px 0 10px 0;
 }
 
 div.message p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.6;
+  text-align: center;
+  color: rgba(255,255,255,.8);
 }
 
 div.message a {
-  margin: 20px 0 10px 0;
-  text-decoration: none;
+  margin: 15px 0 15px 0;
+  /* text-decoration: none;
+  height: 50px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; */
 }
+
+div.landing__hero {
+  position: relative;
+}
+
+div.landing__hero img {
+  max-width: 100%;
+  /* display: block; */
+  z-index: 1;
+}
+
+div.landing__hero::after {
+  position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to bottom, rgba(45,171,202,1) 0%,rgba(45,171,202,0) 100%);
+    z-index: 1;
+}
+
 
 /* Button component */
 .button-component {
-  border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
   background-color: var(--overlay-color);
   color: var(--message-color);
+  text-decoration: none;
+  height: 50px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* Activities section styling */
 div.activities {
-  background-color: var(--activities-background);
+  background-color: var(--overlay-color);
+}
+
+div.activities > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.section h2 {
+  color: #fff;
+  font-size: 24px;;
+  padding: 20px 0 10px 0;
+
 }
 
 div.cards {
@@ -272,7 +336,7 @@ div.cards__card p {
 /* Footer Styling */
 
 footer {
-  background-color: white;
+  background-color: var(--footer-color);
   width: 100%;
 }
 
@@ -280,6 +344,10 @@ footer div.section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+footer h3 {
+  color: rgba(255,255,255,.8);
 }
 
 div.footer__social_media,
@@ -308,9 +376,12 @@ div.footer__social_media ul {
 .fa-envelope,
 .fa-map-marked-alt {
   font-size: 38px;
+  color: var(--primary-color);
+  padding: 10px;
+  border-radius: 50%;
 }
 
-.fa-facebook {
+/* .fa-facebook {
   color: var(--facebook-color);
 }
 
@@ -320,7 +391,7 @@ div.footer__social_media ul {
 
 .fa-reddit {
   color: var(--reddit-color);
-}
+} */
 
 div.footer__social_media ul {
   display: flex;
