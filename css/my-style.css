@@ -23,8 +23,8 @@ html {
 
 body {
   line-height: 1.4;
-  font-family: Lato, monospace;
   position: relative;
+  font-family: Lato, "Lucida Grande", Tahoma, Sans-Serif;
 }
 /* set the header tag to be always fixed to the top of the page */
 header {
@@ -51,6 +51,9 @@ div.logo img {
 }
 
 /* Menu styling starts here */
+nav {
+  display: none;
+}
 
 .menu-wrap {
   position: fixed;
@@ -198,6 +201,10 @@ div.logo img {
 /* Style the icon contained by the last li tag */
 .menu-wrap .menu > div > div > ul > li:last-child > a i.fa-cloud-download-alt {
   padding-right: 5px;
+}
+
+.active-page {
+  border-bottom: 1px solid white;
 }
 /* Section is set to 90% of the viewport, and later used as reference to make the website responsive */
 div.section {
@@ -457,6 +464,7 @@ div.section form textarea  {
 
 div.section form input[type="submit"] {
  background-color: var(--primary-color);
+ width: 200px;
 }
 
 /* Styling the attractions section */
@@ -483,15 +491,90 @@ div.privacy H1 {
 /* Media queries */
 
 @media (min-width: 1024px) {
-  body {
-    width: 1024px;
-    margin: 0 auto;
+
+  div.mobile-menu {
+    display: none;
   }
 
-  div.landing > div {
+  header {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-around;
+  }
+
+  li.active-page a {
+    color: var(--instagram-color);
+  }
+
+  nav {
+    display: block;
+    width: 90%;
+    height: 100%;
+  }
+  nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  nav ul li a:last-child {
+    width: 200px;
+  }
+
+  nav ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+
+  div.logo img {
+    width: 80px;
+  }
+  .button-component:hover {
+    background-color: white;
+    color: var(--overlay-color);
+    border: 2px solid var(--overlay-color);
+  }
+
+  div.landing__hero img {
+    display: none;
+  }
+
+  main div.landing {
+    height: 90vh;
+  }
+
+  main div.landing.home {
+    background-image: url("../assets/images/home-page-hero.jpg");
+  }
+
+  main div.landing.about {
+    background-image: url("../assets/images/dlr-map.jpg");
+  }
+
+  main div.landing.attractions {
+    background-image: url("../assets/images/attractions-hero.jpg");
+  }
+
+  main div.landing.contact {
+    background-image: url("../assets/images/contact-hero.jpg");
+  }
+
+  main div.landing.privacyDGPR {
+    background-image: url("../assets/images/dinning.jpg");
+  }
+
+  main div.landing.home .section .message,
+  main div.landing.about .section .message,
+  main div.landing.attractions .message,
+  main div.landing.contact .message,
+  main div.landing.privacyDGPR .message {
+    background: radial-gradient( rgba(45,171,202,9) 0%,rgba(45,171,202,0) 100%);
+    height: 60vh;
+    width: 100%;;
   }
 }

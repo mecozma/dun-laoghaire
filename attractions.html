@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Explore Dun Laoghaire</title>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/lightbox.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
@@ -29,9 +29,11 @@
                 <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About DLR</a></li>
-                  <li><a href="attractions.html">Local attractions</a></li>
-                  <li><a href="#">News</a></li>
+                  <li class="active-page">
+                    <a href="attractions.html">Local attractions</a>
+                  </li>
                   <li><a href="contact.html">Contact</a></li>
+                  <li><a href="privacy.html">GDPR policy</a></li>
                   <li>
                     <a
                       href="#"
@@ -46,17 +48,37 @@
             </div>
           </div>
         </div>
-
-        <!-- End of .logo -->
       </div>
       <!--End of .mobile-menu-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About DLR</a></li>
+          <li class="active-page"><a href="attractions.html">Local attractions</a></li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li><a href="privacy.html">GDPR policy</a></li>
+          <li>
+            <a
+              href="#"
+              class="button-component"
+              download="assets/downloadable-data/3227_rpt_dlrtourismstrategy_rev4_0.pdf"
+              ><span><i class="fas fa-cloud-download-alt"></i></span
+              >Download Guide</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- End of nav -->
       <div class="logo">
         <img src="assets/images/dlh-town-logo.gif" alt="logo" />
       </div>
+      <!-- End of logo -->
     </header>
 
     <main>
-      <div class="landing">
+      <div class="landing attractions">
         <div class="section">
           <div class="message">
             <h1>Taste Dun Laoghaire</h1>
@@ -82,22 +104,98 @@
       <!-- End of .landing -->
       <div class="attractions">
         <div class="section">
+          <h2>Some of the </h2>
           <div class="attractions__gallery">
-              <a href="assets/images/01.png" data-lightbox="Dun Laoghaire attractions" data-title="St Joseph’s Church in Glasthule"><img src="assets/images/01.png" alt=""></a>
-              <a href="assets/images/02.png" data-lightbox="Dun Laoghaire attractions" data-title="Dun Laoghaire harbour"><img src="assets/images/02.png" alt=""></a>
-              <a href="assets/images/03.png" data-lightbox="Dun Laoghaire attractions" data-title="James Joice Museum"><img src="assets/images/03.png" alt=""></a>
-              <a href="assets/images/04.png" data-lightbox="Dun Laoghaire attractions" data-title="The Pavilion Centre"><img src="assets/images/04.png" alt=""></a>
-              <a href="assets/images/05.png" data-lightbox="Dun Laoghaire attractions" data-title="Dun Laoghaire harbour view"><img src="assets/images/05.png" alt=""></a>
-              <a href="assets/images/06.png" data-lightbox="Dun Laoghaire attractions" data-title="East Pier Sun Shelter"><img src="assets/images/06.png" alt=""></a>
-              <a href="assets/images/07.png" data-lightbox="Dun Laoghaire attractions" data-title="Dun Laoghaire East Pier"><img src="assets/images/07.png" alt=""></a>
-              <a href="assets/images/08.png" data-lightbox="Dun Laoghaire attractions" data-title="Dun Laoghaire Drinking Fountain"><img src="assets/images/08.png" alt=""></a>
-              <a href="assets/images/09.png" data-lightbox="Dun Laoghaire attractions" data-title="40 Foot"><img src="assets/images/09.png" alt=""></a>
-              <a href="assets/images/10.png" data-lightbox="Dun Laoghaire attractions" data-title="East Pier View"><img src="assets/images/10.png" alt=""></a>
-              <a href="assets/images/11.png" data-lightbox="Dun Laoghaire attractions" data-title="People's Park"><img src="assets/images/11.png" alt=""></a>
-              <a href="assets/images/12.png" data-lightbox="Dun Laoghaire attractions" data-title="Marina Museum"><img src="assets/images/12.png" alt=""></a>
-              <a href="assets/images/13.png" data-lightbox="Dun Laoghaire attractions" data-title="Lexicon Library"><img src="assets/images/13.png" alt=""></a>
-              <a href="assets/images/14.png" data-lightbox="Dun Laoghaire attractions" data-title="Yachts moored in Dun Laoghaire"><img src="assets/images/14.png" alt=""></a>
-              <a href="assets/images/15.png" data-lightbox="Dun Laoghaire attractions" data-title="Royal Marine Hotel"><img src="assets/images/15.png" alt=""></a>
+            <a
+              href="assets/images/01.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="St Joseph’s Church in Glasthule"
+              ><img src="assets/images/01.png" alt=""
+            /></a>
+            <a
+              href="assets/images/02.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="Dun Laoghaire harbour"
+              ><img src="assets/images/02.png" alt=""
+            /></a>
+            <a
+              href="assets/images/03.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="James Joice Museum"
+              ><img src="assets/images/03.png" alt=""
+            /></a>
+            <a
+              href="assets/images/04.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="The Pavilion Centre"
+              ><img src="assets/images/04.png" alt=""
+            /></a>
+            <a
+              href="assets/images/05.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="Dun Laoghaire harbour view"
+              ><img src="assets/images/05.png" alt=""
+            /></a>
+            <a
+              href="assets/images/06.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="East Pier Sun Shelter"
+              ><img src="assets/images/06.png" alt=""
+            /></a>
+            <a
+              href="assets/images/07.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="Dun Laoghaire East Pier"
+              ><img src="assets/images/07.png" alt=""
+            /></a>
+            <a
+              href="assets/images/08.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="Dun Laoghaire Drinking Fountain"
+              ><img src="assets/images/08.png" alt=""
+            /></a>
+            <a
+              href="assets/images/09.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="40 Foot"
+              ><img src="assets/images/09.png" alt=""
+            /></a>
+            <a
+              href="assets/images/10.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="East Pier View"
+              ><img src="assets/images/10.png" alt=""
+            /></a>
+            <a
+              href="assets/images/11.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="People's Park"
+              ><img src="assets/images/11.png" alt=""
+            /></a>
+            <a
+              href="assets/images/12.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="Marina Museum"
+              ><img src="assets/images/12.png" alt=""
+            /></a>
+            <a
+              href="assets/images/13.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="Lexicon Library"
+              ><img src="assets/images/13.png" alt=""
+            /></a>
+            <a
+              href="assets/images/14.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="Yachts moored in Dun Laoghaire"
+              ><img src="assets/images/14.png" alt=""
+            /></a>
+            <a
+              href="assets/images/15.png"
+              data-lightbox="Dun Laoghaire attractions"
+              data-title="Royal Marine Hotel"
+              ><img src="assets/images/15.png" alt=""
+            /></a>
           </div>
         </div>
         <!-- End of .section -->

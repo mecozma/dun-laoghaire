@@ -30,55 +30,26 @@ Questions addressed to the client:
                 -- https://www.tripadvisor.co.uk/Attractions-g186606-Activities-Dun_Laoghaire_County_Dublin.html
                 -- https://dlrcoco.ie/
                 https://www.gotobermuda.com/
+                https://afloat.ie/blogs/sailing-saturday-with-wm-nixon/item/43982-dun-laoghaire-town-its-harbour-users-must-it-be-a-continuing-state-of-mutual-incomprehension
 
 
 
----=======----
- Possible features to add:
-  -- downloadable map,
-  --user location on map,
-  --attractions,
-  --activities,
-  --accommodations,
-  --food and drink
-  --shopping,
-  --services,
-  --walks,
-  --connections to public transport,
-  --prompt to join the newsletter
-  --news section  --city news
-                  -- calendar events
+index.html - home page
+  Button to download the map
+  various activities in DLR
+  footer: - social media icons
+          - link to GDPR policy
+          - contact details
 
------=======------
-  --sailing club
-  --kayaking club Dalkey
-  -- Stena Line hub
-  --train station
-  --DLR library
-  --Martelo tower
-  --The NAtional Maritime Museum
-  --40 Foot baths
-  -- ship cruiser to Howth
-  -- East and West piers
-  -- gyms, soccer - any sport activities
+about.html - About us page
+              - video - one day in DLR
+              - short history of the town
 
-  1 home page
-    - clean looking
-    - email link and phone no
+attractions.html - Attractions in DLR
+                      -image gallery with the local attractions
+contact.html - Contact us page
+                  - contact form
 
-  2 attraction page 
-  - 5 attractions
-
-  3 about page
-    - about dun laoghaire
-
-  4. contact page
-    phone no and email
-  5. privacy page
-    - gdpr - what info owe should gather and what we shouldnt
-
-----====-----
-fonts: Roboto
-      Lato    
+privacy.html - GDPR policy - linked in the footer of all the above pages
 
 
