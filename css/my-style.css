@@ -20,12 +20,13 @@ html {
   box-sizing: inherit;
 }
 /* My style */
+
 body {
   line-height: 1.4;
   font-family: Lato, monospace;
   position: relative;
 }
-
+/* set the header tag to be always fixed to the top of the page */
 header {
   height: 11vh;
   position: fixed;
@@ -176,28 +177,29 @@ div.logo img {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
-
+/* Styling the lists/ pages included in the menu/navbar */
 .menu-wrap .menu > div > div > ul > li {
   color: #fff;
   font-size: 1.5rem;
   padding: 1rem;
 }
-
+/* Style for the links wrapped by the  */
 .menu-wrap .menu > div > div > ul > li > a {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
 }
 
+/* Styling the last child of the ul tag */
 .menu-wrap .menu > div > div > ul > li:last-child > a {
   background-color: var(--primary-color);
   font-size: 16px;
 }
-
+/* Style the icon contained by the last li tag */
 .menu-wrap .menu > div > div > ul > li:last-child > a i.fa-cloud-download-alt {
   padding-right: 5px;
 }
-
+/* Section is set to 90% of the viewport, and later used as reference to make the website responsive */
 div.section {
   width: 90%;
   margin: 0 auto;
@@ -310,7 +312,7 @@ div.cards__card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 280px;
+  width: 300px;
   background-color: white;
   margin: 15px;
 }
@@ -409,9 +411,17 @@ div.about_dun_laoghaire {
   line-height: 1.6;
 }
 
+div.about_dun_laoghaire div.section video {
+  /* width="560"
+  height="315" */
+  width: 100%;
+  margin: 20px auto;
+}
+
 div.about_dun_laoghaire div.section h2 {
   color: rgba(45,171,202,1);
 }
+
 
 div.about_dun_laoghaire div.section p {
   padding-bottom: 20px;
@@ -447,4 +457,41 @@ div.section form textarea  {
 
 div.section form input[type="submit"] {
  background-color: var(--primary-color);
+}
+
+/* Styling the attractions section */
+
+div.attractions__gallery {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly ;
+  align-content: space-between;
+  
+}
+
+div.attractions__gallery img {
+  max-width: 400px;
+  flex: 1;
+}
+
+/* Privacy styling */
+
+div.privacy H1 {
+  font-size: 24px;
+}
+
+/* Media queries */
+
+@media (min-width: 1024px) {
+  body {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  div.landing > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 }
